@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(226, 211, 192);
+}
+.gallery {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.picture-animals {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.picture-animals:hover {
+  box-shadow: 2rem 2rem black, -2rem -2rem #aba7a7;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 2;
+  padding: 10px;
+  cursor: pointer;
+}
