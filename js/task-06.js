@@ -4,11 +4,11 @@ const resetBtn = document.querySelector("#reset");
 
 validationInput.addEventListener("blur", () => {
   if (validationInput.value.length < validationInput.dataset.length) {
-    validationInput.classList.add("invalid");
     validationInput.classList.remove("valid");
+    validationInput.classList.add("invalid");
   } else {
-    validationInput.classList.add("valid");
     validationInput.classList.remove("invalid");
+    validationInput.classList.add("valid");
   }
 });
 

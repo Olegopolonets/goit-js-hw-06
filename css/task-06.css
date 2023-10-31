@@ -2,6 +2,7 @@ body {
   background-image: url("https://cdn.dribbble.com/users/146798/screenshots/4281276/media/61ebb0c4eb535359d2dcd6916c628ba7.png?resize=800x600&vertical=center");
   background-repeat: inherit;
   overflow: hidden;
+  background-size: 400px;
 }
 
 .wrapper {

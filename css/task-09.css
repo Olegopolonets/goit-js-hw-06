@@ -1,0 +1,17 @@
+.change-color {
+  outline: none;
+  background-color: bisque;
+  border-radius: 20px;
+  border: 1px solid rgb(253, 219, 179);
+  width: 150px;
+  color: #333;
+  transition: all 0.5s ease;
+}
+
+.change-color:hover {
+  background-color: rgba(255, 228, 196, 0.7);
+}
+
+.hidden {
+  display: none;
+}

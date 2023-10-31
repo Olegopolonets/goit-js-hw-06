@@ -1,31 +1,40 @@
 const body = document.querySelector("body");
 const color = document.querySelector(".color");
 const changeColor = document.querySelector(".change-color");
+const countClick = document.querySelector(".count-click");
+const countWrapper = document.querySelector(".count-wrapper");
+const widget = document.querySelector(".widget");
 
 changeColor.addEventListener("click", () => {
   body.style.backgroundColor = getRandomHexColor();
   color.textContent = getRandomHexColor();
 });
 
+let count = 0;
+
+function clickHandler(event) {
+  count++;
+  countClick.textContent = count;
+  if (count === 5) {
+    alert(
+      "Ви натиснули на кнопку 5 разів, ви побачили, що вона міняє колір фону. Більше не натискайте, або натисніть 20 разів, можливо буде сюрприз."
+    );
+    countWrapper.classList.remove("hidden");
+  }
+
+  if (count === 20) {
+    let imgPoroh = document.createElement("img");
+    imgPoroh.src = "https://i.ibb.co/vsFJX4V/2023-10-31-112226.jpg";
+    imgPoroh.width = 350;
+    console.log(imgPoroh);
+    widget.appendChild(imgPoroh);
+  }
+}
+
+changeColor.addEventListener("click", clickHandler);
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
-
-/* 
-Напиши скрипт, який змінює кольори фону елемента <body> через інлайн-стиль по кліку на button.change-color і виводить значення кольору в span.color.
-
-<div class="widget">
-  <p>Background color: <span class="color">-</span></p>
-  <button type="button" class="change-color">Change color</button>
-</div>
-
-Для генерування випадкового кольору використовуй функцію getRandomHexColor.
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
-*/
