@@ -1,0 +1,35 @@
+body {
+  background-color: lightslategrey;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+a::after {
+  position: absolute;
+  content: "";
+  background-color: bisque;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  color: bisque;
+}
+
+a:hover::after {
+  width: 100%;
+}

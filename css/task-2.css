@@ -1,0 +1,12 @@
+body {
+  background-color: lightslategray;
+}
+ul {
+  margin-left: 40px;
+  margin-right: 40px;
+  list-style: cjk-earthly-branch;
+}
+
+li {
+  font-size: 18px;
+}
