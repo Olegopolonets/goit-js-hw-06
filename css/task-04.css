@@ -1,7 +1,7 @@
 body {
   background-color: rgb(227, 217, 225);
 }
-a {
+.back-to-menu {
   position: absolute;
   z-index: 20;
 }
@@ -41,4 +41,28 @@ a {
   font-size: 80px;
   width: 250px;
   text-align: center;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.link-video {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #ffffff;
+  border: 1px solid #fff;
+  background-color: #333;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
 }
