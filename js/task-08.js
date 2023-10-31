@@ -6,20 +6,20 @@ function getValueOfEmail() {
   if (inputEmail.value !== "") {
     return inputEmail.value;
   }
-  alert("Please fill all fields!");
+  alert("Нормально введи логін!");
 }
 function getValueOfPass() {
   const inputPass = document.querySelector('[type="password"]');
   if (inputPass.value !== "") {
     return inputPass.value;
   }
-  alert("Please fill all fields!");
+  alert("А де пароль? Ти шо кіберзлодій?");
 }
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const emailCase = getValueOfEmail();
-  const passCase = getValueOfPass();
-  console.log({ emailCase, passCase });
+  const email = getValueOfEmail();
+  const pass = getValueOfPass();
+  console.log({ email, pass });
   form.reset();
 });

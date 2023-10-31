@@ -26,7 +26,6 @@ body {
   width: 180px;
   height: 140%;
   background-color: white;
-  box-shadow: 0 0 20px rgb(8, 8, 8);
   animation: animate 7s linear infinite;
 }
 

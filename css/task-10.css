@@ -12,3 +12,35 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+input {
+  width: 70px;
+  background-color: #f0eaec;
+  outline: transparent;
+  border-radius: 10px;
+  border: 2px solid blanchedalmond;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #fed6e3;
+  outline: transparent;
+  border-radius: 20px;
+  border: 2px solid blanchedalmond;
+  transition: all 0.5 ease;
+}
+
+button:last-child {
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #a8edea;
+}
