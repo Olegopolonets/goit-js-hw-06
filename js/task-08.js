@@ -20,6 +20,8 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const email = getValueOfEmail();
   const pass = getValueOfPass();
-  console.log({ email, pass });
+  if (email && pass) {
+    console.log({ email, pass });
+  }
   form.reset();
 });
